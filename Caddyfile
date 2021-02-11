@@ -1,0 +1,23 @@
+
+oauth.htl-leonding.ac.at
+
+file_server
+
+visitor_ip stdout
+
+log {
+	output file /var/log/access.log {
+		roll_size 1gb
+		roll_keep 5
+		roll_keep_for 720h
+                level ALL
+	}
+}
+
+reverse_proxy /dex/* 127.0.0.1:5556
+
+
+reverse_proxy /* 127.0.0.1:3000
+
+reverse_proxy  /proxaux 127.0.0.1:8095
+
