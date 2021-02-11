@@ -1,4 +1,4 @@
-package visitorip
+package  "github.com/skipperich/grpc-web"
 
 import (
 	"fmt"

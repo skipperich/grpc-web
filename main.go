@@ -28,10 +28,10 @@ package main
 
 import (
 	caddycmd "github.com/caddyserver/caddy/v2/cmd"
-
+        "github.com/skipperich/grpc-web"
 	// plug in Caddy modules here
 	_ "github.com/caddyserver/caddy/v2/modules/standard"
-	"visitormod"
+
 )
 
 func main() {
