@@ -1,4 +1,4 @@
-package  "github.com/skipperich/grpc-web"
+package  grpc-web
 
 import (
 	"fmt"
